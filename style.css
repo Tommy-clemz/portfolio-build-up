@@ -1,0 +1,546 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color:rgb(35, 45, 63) ;
+    font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
+/* height: 300vh; */
+
+	
+
+}
+
+header{
+    padding: .6rem;
+    /* margin: .5rem; */
+    /* border-radius: 20px; */
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 2px 5px rgb(13, 20, 33) ;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+.gradient-background {
+    background: linear-gradient(300deg,rgb(70, 79, 121), rgb(0,0,0),rgb(35, 45, 63));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+nav>ul>li>a{
+text-decoration: none;
+color:white;
+font-size: large;
+padding: 2px;
+
+
+}
+nav>ul>li{
+    display: inline;
+    padding: 10px;
+
+}
+
+
+
+.tc{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navigation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.navigation>img{
+    cursor: pointer;
+}
+nav>ul>li>a:hover{
+    cursor: pointer;
+    animation: animate 1s  ease-in infinite;
+    color: rgb(198, 151, 73);
+    
+   
+}
+
+@keyframes animate {
+    0%{
+    border-bottom: 1px solid rgb(215, 193, 161) ;
+        /* border-bottom-width: 5px; */
+        
+        
+    }
+    100%{
+    border-bottom: 5px solid rgb(198, 151, 73) ;
+        /* border-bottom-width: 5px; */
+        
+    }
+   
+
+
+} 
+code{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.homepage{
+    border-bottom-right-radius:20px ;
+    border-top-left-radius: 20px;
+}
+
+.circle{
+    top: -2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:white ;
+    position: relative;
+}
+
+
+
+
+.photo-container{
+    height: 200px;
+    width: 200px;
+     border: 3px solid rgb(115, 95, 50); 
+    border-radius: 50%; 
+    box-shadow: 20px 20px 2px rgb(180, 143, 58) ;
+}
+
+
+.imgntxt-container{
+    margin-top: 4rem;
+     margin-left: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    
+}
+
+
+.welcome{
+    letter-spacing: 3px;
+    font-size: 3rem;
+}
+
+.imgntxt-container>div>p{
+font-size: 1.6rem;
+width: 78%;
+margin-top: 1rem;
+}
+
+.skills-container{
+    margin: 30px auto;
+    font-size: 1.6rem;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgb(13, 20, 33) ;
+  
+}
+
+.progress-container{
+
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgb(115, 95, 50) ;
+    
+
+}
+.progress-html{
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+
+
+
+}
+.progress-html>.circle{
+    left: 99%;
+}
+
+.skills-container>.skills-container-main>.html{
+    font-size: 20px;
+    /* text-align: end; */
+}
+.skills-container>.skills-container-main>.css{
+    font-size: 20px;
+   
+}
+.skills-container>.skills-container-main>.bootstrap{
+    font-size: 20px;
+   
+}
+.skills-container>.skills-container-main>.javascript{
+    font-size: 20px;
+    
+}
+
+.progress-css{
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.progress-css>.circle{
+
+    left: 99%;
+}
+.progress-bootstrap{
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative; 
+}
+.progress-bootstrap>.circle{
+left: 99%;
+}
+.progress-javascript{
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 10%;
+    border-radius: 10px;
+    position: relative;
+
+    
+}
+.progress-javascript>.circle{
+    left: 95%;
+}
+
+
+.html,.css,.bootstrap,.javascript{
+    margin-top: 2rem;
+}
+
+.javascript{
+    margin-bottom: 2rem;
+}
+
+.jar{
+    margin-left: 3%;
+}
+.htm{
+    margin-left: 80%;
+    font-size: 16px;
+    
+
+}
+.btstr{
+    margin-left: 40%;
+
+}
+.cscss{
+    margin-left: 65%;
+
+}
+
+
+
+.project-display{
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 1rem;
+/* width: 90%; */
+margin: auto 50px;
+
+
+} 
+.project-display>.one, .project-display>.two, .project-display>.three, .project-display>.four{
+
+border: none;
+box-shadow: 0 5px 8px rgb(13, 20, 33) ;
+border-radius: 20px;
+}
+.one{
+   height: 250px;
+width: 500px;
+/* background-color: ; */
+}
+.two{
+ height: 250px;
+    width: 500px;
+}
+.three{
+    height: 250px;
+    width: 500px;
+}
+.four{
+  
+    height: 250px;
+width: 500px;
+}
+
+
+
+.proj{
+    margin-left:15% ;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.about-container{
+    width: 50%;
+    margin-left: 15%;
+}
+.give-feedback{
+    border: none;
+    height: 380px;
+    width: 70%;
+    box-shadow: 0 5px 8px rgb(13, 20, 33) ;
+    border-radius: 20px;
+    margin: 4rem auto;
+    padding: 20px;
+  
+}
+ section.give-feedback > form > input[type="text"]:nth-child(3){
+height: 5rem;
+padding: 10px;
+}
+
+
+
+input{
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    outline: none;
+}
+ section.give-feedback > form > button{
+
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: rgb(198, 151, 73);
+    margin-left: 26%;
+    color: white;
+    border-radius: 5px;
+
+    /* margin-bottom: ; */
+ }
+
+
+ section.give-feedback > form > input[type="email"]{
+    font-size: 1rem;
+
+ }
+ section.give-feedback > form > input[type="text"]{
+    font-size: 1rem;
+   
+ }
+
+
+footer{
+    background-color: rgb(15, 25, 46) ;
+    padding: 2rem;
+}
+
+.imgndt{
+align-items:center ;
+display: flex;
+gap: 10px;
+}
+.icons{
+    display: flex;
+gap: 15px;
+}
+
+.img-icon{
+    /* display: flex; */    display: flex;
+    align-items:center;
+   
+    justify-content: space-between;
+}
+
+
+
+ footer > div >.icons > a:nth-child(1){
+color: white;
+}
+ footer > div >.icons > a:nth-child(2){
+color: white;
+}
+ footer > div >.icons > a:nth-child(3){
+color: white;
+}
+
+hr{
+    /* margin-bottom: ; */
+    width: 90%;
+    margin: 0 auto .6rem auto;
+    color: whitesmoke;
+}
+/* 
+.project-display>.one > button
+{
+
+} */
+
+
+
+.btn{
+    position: relative;
+top: 80%;
+left: 70%;
+border: none;
+ padding: 10px;
+ background-color:inherit ;
+border-radius: 30px;
+ box-shadow: 2px 2px 3px  black;
+}
+
+section.project-display > div.one{
+    background-image: url(./tommy.jpeg);
+    background-size:cover ;
+
+}
+section.project-display > div.two{
+    background-image: url(./tommy.jpeg);
+    background-size:cover ;
+
+}
+section.project-display > div.three{
+    background-image: url(./tommy.jpeg);
+    background-size:cover ;
+    
+}
+section.project-display > div.four{
+    background-image: url(./tommy.jpeg);
+    background-size:cover ;
+
+}
+
+
+
+footer > div > span{
+    font-size:.8rem;
+ }
+
+
+
+
+@media (max-width:560px) {
+    .imgntxt-container{
+       flex-direction: column;
+       text-align: start;
+       margin-left: 2rem;
+       /* width: 50%; */
+        
+    }
+ /* div.imgntxt-container > div{
+width: 90%;
+    } */
+     div.imgntxt-container > div > code{
+        font-size:xx-large;
+    }
+    .skills-container{
+        width: 90%;
+    }
+    .give-feedback{
+        width: 90%;
+    }
+    .photo-container{
+        box-shadow: 2px 2px 20px rgb(180, 143, 58);
+    }
+    /* .btn{
+        top: 80%;
+        left: 10%;
+        padding: 3px;
+        
+    } */
+   
+}
+
+@media (min-width:100px) and (max-width:370px) {
+    .btn{
+        
+        top: 80%;
+        left: 45%;
+        padding: 3px;
+        
+        
+    }
+
+    .icons{
+        flex-direction: column;
+    }
+
+   .imgndt{
+flex-direction: column;
+    }
+ footer > div > span{
+    font-size:.8rem;
+ }
+    
+}
+
+@media (max-width:200px) {
+    .btn{
+        
+        top: 80%;
+        left: 30%;
+        
+    }
+   
+
+}
+@media (max-width:225px) {
+    .btn{
+        
+        top: 80%;
+        left: 30%;
+        
+    }
+    .homepgtxt{
+        display: none;
+    }
+   
+
+}
+
+@media (min-width:370px) and (max-width:456px){
+   .btn{
+        
+        top: 80%;
+        left: 60%;
+        
+    }
+}
