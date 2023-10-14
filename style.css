@@ -344,6 +344,17 @@ input{
     font-size: larger;
     outline: none;
 }
+textarea{
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    outline: none;
+	 }
  section.give-feedback > form > button{
 
     width: 50%;
