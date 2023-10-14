@@ -250,6 +250,8 @@ left: 99%;
 
 .jar{
     margin-left: 3%;
+	font-size: 16px;
+    
 }
 .htm{
     margin-left: 80%;
@@ -259,11 +261,14 @@ left: 99%;
 }
 .btstr{
     margin-left: 40%;
+	font-size: 16px;
+    
 
 }
 .cscss{
     margin-left: 65%;
-
+   font-size: 16px;
+    
 }
 
 
