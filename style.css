@@ -149,7 +149,7 @@ code{
 
 .imgntxt-container>div>p{
 font-size: 1.6rem;
-width: 78%;
+/* width: 90%; */
 margin-top: 1rem;
 }
 
@@ -250,8 +250,8 @@ left: 99%;
 
 .jar{
     margin-left: 3%;
-	font-size: 16px;
-    
+    font-size: 16px;
+
 }
 .htm{
     margin-left: 80%;
@@ -261,14 +261,15 @@ left: 99%;
 }
 .btstr{
     margin-left: 40%;
-	font-size: 16px;
-    
+    font-size: 16px;
+
 
 }
 .cscss{
     margin-left: 65%;
-   font-size: 16px;
-    
+    font-size: 16px;
+
+
 }
 
 
@@ -276,14 +277,20 @@ left: 99%;
 .project-display{
 display: flex;
 gap: 10px;
-flex-wrap: wrap;
+flex-wrap:wrap;
 justify-content: center;
-margin-bottom: 1rem;
+/* margin-bottom: rem; */
 /* width: 90%; */
-margin: auto 50px;
+margin: 0 50px 40px 50px;
 
 
-} 
+
+}
+.inc2{
+    display: none;
+}
+
+
 .project-display>.one, .project-display>.two, .project-display>.three, .project-display>.four{
 
 border: none;
@@ -310,7 +317,6 @@ width: 500px;
 }
 
 
-
 .proj{
     margin-left:15% ;
     margin-bottom: 1rem;
@@ -319,11 +325,11 @@ width: 500px;
 
 .about-container{
     width: 50%;
-    margin-left: 15%;
+    margin-left: 8%;
 }
 .give-feedback{
     border: none;
-    height: 380px;
+    height: 500px;
     width: 70%;
     box-shadow: 0 5px 8px rgb(13, 20, 33) ;
     border-radius: 20px;
@@ -357,9 +363,11 @@ textarea{
     margin-top: 20px;
     border-radius: 10px;
     border: none;
-    font-size: large;
+    font-size: .9rem;
     outline: none;
-	 }
+    font-family: 'Exo 2', sans-serif;
+
+}
  section.give-feedback > form > button{
 
     width: 50%;
@@ -440,7 +448,12 @@ border: none;
  padding: 10px;
  background-color:inherit ;
 border-radius: 30px;
- box-shadow: 2px 2px 3px  black;
+color: white;
+}
+
+.btn:hover{
+ box-shadow: 0 2px 3px  black,2px 0 3px  black;
+
 }
 
 section.project-display > div.one{
@@ -471,6 +484,9 @@ footer > div > span{
  }
 
 
+  footer > div > span{
+   font-size: xx-small;
+ }
 
 
 @media (max-width:560px) {
@@ -502,6 +518,36 @@ width: 90%;
         padding: 3px;
         
     } */
+
+ 
+    .htm{
+        margin-left: 70%;
+        
+    
+    }
+    .btstr{
+        margin-left: 40%;
+    
+    
+    }
+    .cscss{
+        margin-left: 65%;
+    
+    
+    }
+
+    .inc{
+        display: none;
+    }
+
+    .inc2{
+        display: block;
+    }
+
+    body > footer > div > span{
+        width: 30%;
+    }
+    
    
 }
 
